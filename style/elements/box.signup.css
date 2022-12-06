@@ -1,0 +1,53 @@
+/* Inner box styling*/
+#signup-box{
+	background-color: var(--color-c);
+	
+	max-width: 280px;
+	width: 100%;
+	padding: 10px;
+	
+	box-sizing: border-box;
+}
+
+#errormsg{
+	max-width: 270px;
+}
+
+#signup-fields > input {
+	margin-bottom:10px;
+}
+
+#signup-fields > input[type=submit] {
+	margin-bottom:0px;
+}
+
+#signup-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+#signup-disabled{
+	display: grid;
+
+	margin-bottom: 10px;
+	background-color: var(--color-error);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#signup-disabled > div{
+	justify-content: center;
+	align-items: center;
+}
+
+.signup-margin{
+	margin-bottom: 10px;
+}
+
+#signup-submit-btn{
+	height: 30px;
+}

@@ -1,0 +1,30 @@
+#searchbox{
+	padding: 10px;
+	background-color: var(--color-b);
+	box-sizing: border-box;
+}
+
+#searchbox> form{
+	display: grid;
+	grid-auto-rows: auto;
+	grid-gap: 0px;
+	margin: 0px;
+}
+
+#searchbox> form > input{
+	margin-bottom: 5px;
+}
+
+#search-results{
+	display: grid;
+	grid-gap: 5px;
+	
+	padding: 10px;
+	
+	animation: fadein2 0.5s;
+}
+
+#search-results > a{
+	padding: 10px;
+	background-color: var(--color-d);
+}

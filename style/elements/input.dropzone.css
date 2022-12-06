@@ -1,0 +1,39 @@
+#dropzone{
+	min-width: 200px;
+	min-height: 200px;
+	line-height: 200px;
+
+	text-align: center;
+
+	margin-bottom: 10px;
+}
+
+.dragarea{
+	border: 3px dashed var(--color-a);
+	transition: 0.5s;
+}
+
+.dragging{
+	border: 3px dashed var(--color-text);
+	transition: 0.5s;
+}
+
+#dropzone-preview{
+	display:grid;
+	grid-template-columns:repeat(auto-fill,minmax(300px, 1fr));
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+.dropzone-preview-container{
+	width:100%;
+	height:200px;
+
+	animation: fadein2 0.5s;
+}
+
+.dropzone-previewimg{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

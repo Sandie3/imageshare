@@ -1,0 +1,115 @@
+/* Header Styling */
+#header{
+	display:grid;
+	grid-template-rows: 220px minmax(50px, auto);
+	
+	background-color: var(--color-d);
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#header-bar{
+	display: grid;
+	grid-template-columns: min-content auto;
+}
+
+#header-bar-actions{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	
+	padding-right: 5px;
+	
+	text-align: center;
+	
+	margin-top: 100px;
+	padding-left: 10px;
+	
+	background-color: var(--color-b);
+}
+
+#header-profileimg{
+	object-fit: cover;
+}
+
+#header-profileimg > img{
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	overflow-anchor: none;
+	
+	border: 3px solid var(--color-c);
+}
+
+#header-bar-section{
+	display:flex;
+	gap: 10px;
+	
+	background-color: var(--color-b);
+}
+
+.header-bar-centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#header-bar-section > div {
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+
+#header-bar-section > button{
+	height: 100%;
+}
+
+#form-follow > button{
+	height: 100%;
+}
+
+#form-follow > #btn-unfollow{
+	cursor:pointer;
+}
+
+#form-follow > #btn-follow{
+	cursor:pointer;
+}
+
+#form-follow > #btn-unfollow:hover{
+	background: var(--color-error);
+}
+
+#form-follow > #btn-follow:hover{
+	background: var(--color-success);
+}
+
+#veri-user{
+	margin-right: 5px;
+}
+
+/*Scaling*/
+@media screen and (max-width: 1000px) {
+	#header-bar-actions { 
+		margin-top: 0px; 
+	}
+	
+	#header-bar-section {
+		gap: 5px;
+	}
+	
+	#veri-user{
+		display: none;
+	}
+	
+	#header-profileimg > img{
+		width: 50px;
+		height: 50px;
+		border: 0px solid var(--color-c);
+	}
+	
+	.header-bar-centered{
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,46 @@
+#profile-info{
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+	margin: 0px 0px 10px;
+	min-height: 100px;
+	overflow:hidden;
+}
+
+#profile-info > div{
+	background-color: var(--color-d);
+	padding: 10px;
+}
+
+/* Rank styling */
+#profile-rank{
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
+}
+
+#rank-icon> img{
+	height: 50px;
+	object-fit: cover;
+	overflow-anchor: none;
+	
+	/*border-radius: 0px;
+	background-color: var(--color-bg);*/
+}
+
+#rank-data > div{
+	margin-bottom: 5px;
+	margin-right: 5px;
+}
+
+#rank-progress > span{
+	width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+	#profile-info{
+		grid-template-columns: auto;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}

@@ -1,0 +1,9 @@
+#contents{
+	display: grid;
+	grid-gap: 10px;
+}
+
+#contents > div{
+	background-color: var(--color-d);
+	padding: 10px;
+}

@@ -1,0 +1,28 @@
+tr td, tr a{
+	padding:3px;
+}
+
+tr{
+	background-color: var(--color-b);
+}
+
+td{
+	background-color:var(--color-c);
+	text-align:center;
+}
+
+tr td a, tr th a{
+	color:black;
+}
+
+ul{
+	list-style-position: inside; 
+	padding-bottom: 0px;
+}
+
+#contents{
+	float:right;
+	display:inline-block;
+	position:absolute;
+	padding:15px;
+}

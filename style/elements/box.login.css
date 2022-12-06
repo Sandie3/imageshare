@@ -1,0 +1,50 @@
+/* Inner box styling*/
+#login-box{
+	background-color: var(--color-c);
+
+	max-width: 280px;
+	width: 100%;
+	padding: 10px;
+	
+	box-sizing: border-box;
+}
+
+#errormsg{
+	max-width: 270px;
+}
+
+#login-fields > input {
+	margin-bottom:10px;
+}
+
+#login-fields > input[type=submit] {
+	margin-bottom:0px;
+}
+
+#login-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+#login-disabled{
+	display: grid;
+
+	margin-bottom: 10px;
+	background-color: var(--color-error);
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#login-disabled > div{
+	
+	justify-content: center;
+	align-items: center;
+}
+
+.login-margin{
+	margin-bottom: 10px;
+}

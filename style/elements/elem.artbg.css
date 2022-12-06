@@ -1,0 +1,44 @@
+#artbg{
+	display: grid;
+	grid-template-columns:repeat(4, 1fr);
+	grid-auto-rows:1fr;
+
+	/*padding: 50px;
+	padding-top: 70px;
+	grid-gap: 50px;*/
+
+	position: absolute;
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+
+	overflow: hidden;
+}
+
+.artbg-img{
+	animation: fadein3 1s;
+	transition: 1s;
+	filter: brightness(40%);
+}
+
+.artbg-img > a{
+	width: 100%;
+	height: 100%;
+}
+
+.artbg-img > a > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+	#artbg{
+		grid-template-columns:repeat(3, 1fr);
+		grid-auto-rows: 100%;
+	}
+}

@@ -1,0 +1,16 @@
+#welcome-message{
+	background-color: var(--color-d);
+	height: auto;
+	padding: 10px;
+	background-color:rgba(0, 0, 0, 0.50);
+}
+
+#choice-login, #choice-signup{
+	margin-top: 10px;
+	width: 150px;
+	height: 50px;
+}
+
+#choice-login{
+	margin-right: 10px;
+}

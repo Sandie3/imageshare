@@ -1,0 +1,7 @@
+#errormsg {
+	background-color: var(--color-a);
+	padding: 5px;
+	margin-bottom:10px;
+	
+	animation: fadein2 0.6s;
+}

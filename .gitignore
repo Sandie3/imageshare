@@ -1,0 +1,14 @@
+# Don't push database
+database/uploads/*
+!database/uploads/.keep
+
+database/thumbnails/*
+!database/thumbnails/.keep
+
+database/icons/*
+!database/icons/.keep
+!database/icons/default.jpg
+
+database/banners/*
+!database/banners/default.jpg
+!database/banners/.keep

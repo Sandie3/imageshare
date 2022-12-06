@@ -1,0 +1,76 @@
+#content{
+	display: grid;
+	grid-template-columns: 1fr 50% 1fr;
+	grid-auto-rows: auto;
+	grid-gap: 10px;
+	margin-top: 10px;
+}
+
+.user-settings-section > div{
+	margin-bottom: 10px;
+	background: var(--color-d);
+}
+
+.settings-margin{
+	margin-bottom: 10px;
+}
+
+.settings-margin2{
+	margin-bottom: 5px;
+}
+
+#settings-navigation{
+	float:right;
+	display:grid;
+	padding: 10px;
+	background: var(--color-d);
+}
+
+#user-settings-column{
+	padding: 10px;
+}
+
+#user-setting-area{
+	display:grid;
+	grid-gap: 5px;
+	padding: 10px;
+}
+
+#enables-form > div{
+	display:grid;
+	grid-template-columns: min-content 1fr;
+	grid-gap: 5px;
+}
+
+.info-input{
+	margin: 0;
+	margin-bottom: 5px;
+	display: inline;
+}
+
+.info-input:last-child{
+	margin-bottom: 0px;
+}
+
+.enables-label{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height:100%;
+}
+
+.settings-textarea{
+	display:block;
+	margin-bottom:1em;
+	clear:both;
+	
+	width: 100%;
+	height: 100px;
+	
+	margin: 0;
+}
+
+#errormsg {
+	margin-bottom:0px;
+	background: var(--color-a);
+}

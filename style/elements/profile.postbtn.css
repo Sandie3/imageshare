@@ -1,0 +1,73 @@
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.6);
+	
+	animation: fadein2 0.5s;
+	transition: 0.5s;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+#post-choice > input{
+	height: 50px;
+	width: 100%;
+}
+
+.modal-content {
+	background-color: var(--color-c);
+	padding: 10px;
+	min-width: 350px;
+	overflow-y: auto;
+}
+
+.modal-header{
+	display: none;
+
+	font-size: 18px;
+	padding: 10px;
+}
+
+.modal-buttons{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.modal-inputs{
+	display:grid;
+	grid-auto-rows: auto;
+}
+
+.modal-input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal-buttons > button{
+	width: 100%;
+	height: 50px;
+}
+
+#file-preview{
+	max-height: 200px;
+}
+
+#file-preview-img{
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+}
+
+#closebtn{
+	display:grid;
+	grid-template-columns: auto 1fr auto;
+	margin-bottom: 10px;
+}

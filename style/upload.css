@@ -1,0 +1,45 @@
+#contents{
+	
+}
+
+#upload-box{
+	padding: 10px;
+	background-color: var(--color-d);
+}
+
+.modal-buttons{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.modal-inputs{
+	display:grid;
+	grid-auto-rows: auto;
+}
+
+.modal-input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.modal-buttons > button{
+	width: 100%;
+	height: 50px;
+}
+
+#file-preview{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.previewimg{
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+}
+
+.filearea{
+	border: 4px dashed var(--color-a);
+}

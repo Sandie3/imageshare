@@ -1,0 +1,32 @@
+#viewer-box{
+	width: 100%;
+}
+
+#viewer-images{
+	display:grid;
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+#viewer-img{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#viewer-img > img{
+	width: 900px;
+}
+
+#viewer-tags{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-d);
+}
+
+#viewer-tags a{
+	color: var(--color-link);
+	padding: 10px;
+}
+

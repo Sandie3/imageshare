@@ -1,0 +1,12 @@
+#fuzzyresults{
+	display:grid;
+	grid-gap: 5px;
+	padding: 5px;
+}
+
+#fuzzyresults > div{
+	background-color: var(--color-b);
+	padding: 10px;
+	
+	animation: fadein2 0.5s;
+}

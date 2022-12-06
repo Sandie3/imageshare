@@ -1,0 +1,33 @@
+/* Feed Styling */
+#feed-txt{
+	display: grid;
+	grid-template-columns:repeat(1, 1fr);
+	grid-auto-rows: minmax(min-content, 60px);
+	
+	grid-gap: 10px;
+}
+
+#feed-txt-contents{
+	padding: 2px;
+}
+
+#feed-txt-post{
+	display: grid;
+	grid-template-columns: 50px 1fr auto;
+	
+	grid-gap: 5px;
+	
+	overflow:hidden;
+}
+
+#feed-txt-icon > img{
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#feed-txt-username{
+	margin-left: 0px;
+	margin-top: 0px;
+}
+

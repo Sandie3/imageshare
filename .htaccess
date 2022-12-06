@@ -1,0 +1,27 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{QUERY_STRING} !^id=
+RewriteCond %{QUERY_STRING} !^i=
+RewriteRule ^likes/(\w+)?$ likes.php?id=$1 [L]
+RewriteRule ^following/(\w+)?$ following.php?id=$1 [L]
+RewriteRule ^followers/(\w+)?$ followers.php?id=$1 [L]
+RewriteRule ^profile/(\w+)?$ profile.php?id=$1 [L]
+RewriteRule ^post/(\w+)?$ viewer.php?id=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$  $1.php  [L]  # or [END]
+
+RewriteRule ^index?$ index.php
+RewriteRule ^frontpage?$ frontpage.php
+RewriteRule ^home?$ home.php
+RewriteRule ^settings?$ settings.php
+RewriteRule ^upload?$ upload.php
+RewriteRule ^404?$ 404.php
+RewriteRule ^logout?$ logout.php
+
+php_value post_max_size 10M
+php_value upload_max_filesize 10M
